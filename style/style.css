@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+button:hover{
+    cursor: pointer;
+}
+
+
+body{
+    height: 500vh;
+}
+.task1{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #F5F5F7;
+}
+.main__image__wrapper{
+    max-width: 100%;
+    img{
+        width: 1300px;
+    }
+}
+.colors__wrapper{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    .color1{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #868688;
+    }
+    .color1:hover{
+        cursor: pointer;
+    }
+    .color2{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #F9E9DB;
+    }
+    .color2:hover{
+        cursor: pointer;
+    }
+    .color3{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #ACA9A2;
+    }
+    .color3:hover{
+        cursor: pointer;
+    }
+    .color4{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #E8E9E7;
+    }
+    .color4:hover{
+        cursor: pointer;
+    }
+}
+
+
+.task2{
+    height: 100vh;
+    width: 100%;
+    background: dodgerblue;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 400px;
+    height: 200px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    border-radius: 20px;
+    position: relative;
+    .card__image{
+        width: 120px;
+        position: absolute;
+        top: -20%;
+        img{
+            border-radius: 20px;
+            object-fit: cover;
+        }
+    }
+    .card__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        :last-child{
+            opacity: .5;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+    }
+}
